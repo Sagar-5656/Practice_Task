@@ -14,8 +14,10 @@ public class HomeController {
 	@Autowired
 	EmployeeServiceI esi;
 	
-	@PostMapping
+	@PostMapping("/add")
 	public Employee addEmployee(@RequestBody Employee e) {
+		
+		System.out.println("Ishwar have added Post method");
 		Employee ee =esi.saveEmployee(e);
 		return ee;
 	}
