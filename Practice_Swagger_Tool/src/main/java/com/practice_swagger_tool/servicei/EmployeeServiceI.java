@@ -12,4 +12,6 @@ public interface EmployeeServiceI {
 
 	public Employee getSingle(int id);
 
+	public void deletedata(int id);
+
 }

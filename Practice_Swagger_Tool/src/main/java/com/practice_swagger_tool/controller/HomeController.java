@@ -3,6 +3,7 @@ package com.practice_swagger_tool.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -41,4 +42,17 @@ public class HomeController {
 		Employee ee = esi.getSingle(id);
 		return ee;
 	}
+	@DeleteMapping("/del/{id}")
+	public void deleteData(@PathVariable int id)
+	
+	{
+		
+		esi.deletedata(id);
+		
+		System.out.println("iSH have added delete method ");
+		
+		
+	}
+	
+	
 }

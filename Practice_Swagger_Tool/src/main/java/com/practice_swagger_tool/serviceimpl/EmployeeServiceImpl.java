@@ -40,4 +40,12 @@ public class EmployeeServiceImpl implements EmployeeServiceI{
 		
 	}
 
+	@Override
+	public void deletedata(int id) {
+
+      er.deleteById(id);
+		
+		
+	}
+
 }
