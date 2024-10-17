@@ -35,6 +35,10 @@ public class HomeController {
 		return list;
 	}
 	
+	public void m1() {
+		
+	}
+	
 	@GetMapping("/getsingle/{id}")
 	public Employee getSingleData(@PathVariable int id) {
 		
